@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Extensão — Greve</title>
+  <style>
+    :root{
+      --bg:#6b0f0f;
+      --accent:#8f1a1a;
+      --text:#fff;
+      --shadow:0 12px 18px rgba(0,0,0,0.6);
+      --maxw:1200px;
+      --avatar-size:120px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family:"Georgia",serif;
+      background:var(--bg);
+      color:var(--text);
+      text-align:center;
+      min-height:100vh;
+      padding:40px 20px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      overflow-y: scroll;
+
+      /* 🔥 Fundo fixo com a imagem centralizada */
+      background-image: url(./assets/logomao.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: 650px auto; /* imagem maior */
+    }
+
+    header{
+      margin-bottom:40px;
+    }
+
+    header h1{
+      font-size:28px;
+      letter-spacing:1px;
+      margin-bottom:15px;
+    }
+
+    a.insta{
+      display:inline-block;
+      margin-top:10px;
+      background:linear-gradient(90deg,#c84b4b,#b33);
+      padding:10px 16px;
+      border-radius:8px;
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      box-shadow:var(--shadow);
+      transition:transform 0.2s;
+    }
+    a.insta:hover{
+      transform:scale(1.05);
+    }
+
+    main{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:40px;
+      width:100%;
+    }
+
+    .team{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+      max-width:var(--maxw);
+    }
+
+    .avatar{
+      width:var(--avatar-size);
+      height:var(--avatar-size);
+      border-radius:50%;
+      overflow:hidden;
+      box-shadow:0 8px 12px rgba(0,0,0,0.6);
+      border:4px solid rgba(255,255,255,0.2);
+    }
+
+    .avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .name{
+      margin-top:10px;
+      font-weight:700;
+    }
+
+    video{
+      margin-top:60px; /* 🔥 espaçamento extra antes do vídeo */
+      max-width:90%;
+      border-radius:12px;
+      box-shadow:0 12px 18px rgba(0,0,0,0.6);
+    }
+
+    .section{
+      background: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 12px 18px rgba(0,0,0,0.6);
+      max-width: 900px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .section h2{
+      margin-bottom: 15px;
+      color: #ffdcdc;
+      text-align:center;
+    }
+
+    footer{
+      margin-top:60px;
+      opacity:0.8;
+      font-size:0.9rem;
+      text-align:center;
+      max-width:900px;
+    }
+
+    @media(max-width:600px){
+      :root{--avatar-size:90px}
+      header h1{font-size:22px}
+      .section{padding:18px}
+      body{background-size:400px auto;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GREVE — Projeto de Extensão</h1>
+    <a class="insta" href="https://instagram.com/instagramdotrabalho" target="_blank">ACESSE O INSTAGRAM DO PROJETO</a>
+  </header>
+
+  <main>
+    <!-- Equipe -->
+    <div class="team">
+      <div>
+        <div class="avatar"><img src="assets/ana_livia.png" alt="Ana Livia"></div>
+        <div class="name">Ana Lívia Santana</div>
+      </div>
+      <div>
+        <div class="avatar"><img src="assets/rhafa.png" alt="Rhafaela"></div>
+        <div class="name">Rhafaela Silva</div>
+      </div>
+      <div>
+        <div class="avatar"><img src="assets/isa.png" alt="Maria Isadora"></div>
+        <div class="name">Maria Isadora</div>
+      </div>
+      <div>
+        <div class="avatar"><img src="assets/valter.png" alt="Valter"></div>
+        <div class="name">Valter Fernandes</div>
+      </div>
+      <div>
+        <div class="avatar"><img src="assets/alexandre.png" alt="Alexandre"></div>
+        <div class="name">Alexandre Hosken</div>
+      </div>
+      <div>
+        <div class="avatar"><img src="assets/ruth.PNG" alt="Ruth"></div>
+        <div class="name">Ruth Graciana</div>
+      </div>
+      <div>
+        <div class="avatar"><img src="assets/sabrina.png" alt="Sabrina"></div>
+        <div class="name">Sabrina Guilherme</div>
+      </div>
+    </div>
+
+    <!-- Vídeo -->
+    <video controls>
+      <source src="./assets/video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+
+    <!-- Seções -->
+    <section class="section"> 
+      <h2>Tema Atribuído</h2> 
+      <p>Direito do Trabalho e Novas Formas de Greve.
+      <br>Faculdade: Rede de ensino Doctum – Carangola-MG<br> 
+      Professor(a): Eloá Leão Monteiro de Barros.<br> 
+      Grupo: nº 3 Período: 3/4<br>
+      Integrantes: Alexandre Hosken Latorre; Ana Livia de Araújo Santana; Maria Isadora Souza Campos; Rhafaela Silva Valente; Ruth Graciana Oliveira; Sabrina Guilherme Martins Albergaria; Valter Fernandes de Freitas.</p>
+    </section>
+
+    <section class="section">
+      <h2>1 - Revisão Teórica Inicial</h2>
+      <p>Viana (2009, p. 102-103) destaca que a resistência laboral acompanha a história, manifestando-se de diversas formas individuais, coletivas, culturais e simbólicas, desde a escravidão até o capitalismo contemporâneo. Conforme a Lei nº 7.783/1989, que regulamenta o exercício do direito de greve, dispõe o artigo 2º: “Greve é a suspensão coletiva, temporária e pacífica, total ou parcial, da prestação pessoal de serviços ao empregador.” (Lei nº 7.783/1989, art. 2º). Nesse contexto, o Ministro Edson Fachin ressaltou que, “o direito de greve deriva das liberdades de reunião e de expressão, direitos que, como já reconheceu esta Corte, constituem pilares do Estado Democrático de Direito” (STF, RE 654.432/GO, apud Conforti, 2025, p. 32). No entanto, Abrantes (2021, p. 532-535) enfatiza que a limitação do direito de greve deve seguir o princípio da proporcionalidade, restringindo-se ao mínimo indispensável para assegurar o funcionamento dos serviços essenciais e a proteção de outros direitos fundamentais. A greve pode se manifestar de diversas formas, desde paralisações de operários até modalidades mais simbólicas, como greves de silêncio ou de zelo. Todas compartilhando características comuns de protesto coletivo, pressão e ruptura da rotina (Viana, 2009, p. 114). Além disso, com as mudanças recentes nas relações de trabalho, como a fragmentação da força de trabalho, terceirizações e contratos atípicos, as greves tradicionais perderam força, dando espaço a formas alternativas de resistência, como boicotes e estratégias de consumo solidário. Essas estratégias ampliam a visibilidade e a eficácia da luta coletiva (Viana, 2009, p. 116-119). Para Magalhães (2012, p. 61) “Os obreiros perceberam que, sozinhos, sucumbiam frente ao capital, mas, juntos, ganhavam força e, assim, paulatinamente, foram se organizando, por meio dos sindicatos, e tentando alcançar um padrão de trabalho mais digno”. Nesse sentido, o direito de greve se apresenta como um dos direitos fundamentais das trabalhadoras e trabalhadores, sendo um meio legítimo de defesa dos seus interesses econômicos, sociais e profissionais. Esse direito consolida a importância da ação coletiva e da negociação sindical, garantindo que os trabalhadores tenham voz e força na busca por melhores condições de trabalho (Conforti, 2025, p. 36-37).</p>
+    </section>
+
+    <section class="section">
+      <h2>2 - Justificativa</h2>
+      <p>A escolha do tema “Direito do Trabalho e Novas Formas de Greve” é relevante por tratar de um direito fundamental assegurado pela Constituição Federal, especialmente pelo artigo 9º, que garante aos trabalhadores o direito de se organizar e de exercer a greve como instrumento legítimo de defesa de seus interesses econômicos, sociais e profissionais, em consonância com os princípios da dignidade da pessoa humana e da cidadania. A greve, historicamente, constitui um mecanismo de resistência e de conquista de direitos sociais e trabalhistas, sendo regulamentada ainda pela Lei nº 7.783/1989, que estabelece requisitos, como comunicação prévia, negociação coletiva e preservação de serviços essenciais, além de delimitar formas de atuação legítimas e ilegítimas. Diante das transformações no mundo do trabalho, novas modalidades de mobilização vêm surgindo, como boicotes digitais, paralisações estratégicas e greves de zelo, ampliando o alcance e a eficácia dessa luta, mas mantendo a necessidade de observância dos requisitos legais para assegurar a legalidade e legitimidade do movimento. Nesse contexto, a atividade proposta busca transformar o conhecimento teórico em prática extensionista, por meio da criação e distribuição de folders explicativos em empresas locais e da produção de conteúdo digital em plataformas como Instagram, esclarecendo dúvidas, aproximando o tema da realidade cotidiana e promovendo o diálogo entre trabalhadores, empresas e sociedade. Portanto, a proposta justifica-se pelo seu caráter educativo e social, ao difundir informações de forma acessível e atrativa, contribuindo para a formação cidadã, para o fortalecimento da participação democrática dos trabalhadores na defesa de seus direitos e para a valorização da regulamentação jurídica que protege o exercício legítimo da greve.</p>
+    </section>
+
+    <section class="section">
+      <h2>3 - Conexão com o Eixo Temático</h2>
+      <p>O tema “Direito do Trabalho e Novas Formas de Greve” se relaciona com o trabalho ao abordar a greve como instrumento de resistência e defesa dos interesses dos trabalhadores, permitindo que estes reivindiquem melhores condições laborais. Em relação à economia, as greves e outras formas de mobilização, como boicotes e paralisações estratégicas, influenciam a produção e o mercado, pressionando empresas a atender demandas justas. Quanto aos direitos sociais, o tema evidencia que a greve é uma expressão de cidadania e de efetivação da justiça social, garantindo a dignidade, a proteção legal e a participação democrática dos trabalhadores nas decisões que afetam sua vida profissional.</p>
+    </section>
+
+    <section class="section">
+      <h2>4 - Referências</h2>
+      <p>VIANA, Márcio Túlio. Da greve ao boicote: os vários significados e as novas possibilidades das lutas operárias. Rev. Trib. Reg. Trab. 3ª Reg., Belo Horizonte, v. 49, n. 79, p. 101-121, jan./jun. 2009. Disponível em: https://sistemas.trt3.jus.br/bd trt3/handle/11103/26998. Acesso em: 04 set. 2025. MAGALHÃES, Aline; MIRANDA, Iúlian. A greve como direito fundamental: características e perspectivas trabalhistas-administrativas strike as a fundamental right: features and perspectives labor-administrative. Rev. Trib. Reg. Trab. 3a Reg, v. 86, p. 53–76, jul./dez. 2012. Disponível em: https://www.trt3.jus.br/escola/download/revista/rev_86/aline_carneiro_magalhaes_e_iulia n_miranda.pdf. Acesso em: 04 set. 2025. BRASIL. Constituição da República Federativa do Brasil de 1988. Brasília, DF: Presidência da República, 1988. Disponível em: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm. Acesso em: 05 set. 2025. CONFORTI, Luciana Paula. Liberdade sindical, negociação coletiva e direito de greve segundo a Corte Interamericana de direitos humanos e a perspectiva de gênero. Revista Brasileira de Direito Sindical, Ano 1, n. 1, p. 26, Jan/Fev. 2025. Disponível em: https://scholar.google.com/scholar?hl=pt BR&lr=lang_pt&as_sdt=0%2C5&q=Liberdade+sindical%2C+negociação+coletiva+e+dir eito+de+greve+segundo+a+Corte+Interamericana+de+direitos+humanos+e+a+perspectiv a+de+gênero&btnG=. Acesso em: 05 set. 2025. ABRANTES, José João. Sobre os limites da greve. Revista de Direito Comercial, p. 511-536, mar. 2021. Disponível em: https://scholar.google.com/scholar?hl=pt BR&lr=lang_pt&as_sdt=0%2C5&q=Liberdade+sindical%2C+negociação+coletiva+e+dir eito+de+greve+segundo+a+Corte+Interamericana+de+direitos+humanos+e+a+perspectiv a+de+gênero&btnG=. Acesso em: 05 set. 2025. BRASIL. Lei n.º 7.783, de 28 de junho de 1989. Dispõe sobre o exercício do direito de greve, define as atividades essenciais, regula o atendimento das necessidades inadiáveis da comunidade, e dá outras providências. Brasília, DF: Presidência da República, 1989. Disponível em: https://www.planalto.gov.br/ccivil_03/leis/l7783.HTM. Acesso em: 03 out. 2025.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>Feito para uso acadêmico — modelo responsivo em HTML/CSS/JS (único arquivo). — Doctum Carangola</small>
+  </footer>
+</body>
+</html>
+
+
+div kdowododw kdwwjdd 
+
+jdwdwo
