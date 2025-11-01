@@ -28,6 +28,7 @@
       align-items:center;
       justify-content:flex-start;
       overflow-y: scroll;
+      overflow-x: hidden;
 
       /* 🔥 Fundo fixo com a imagem centralizada */
       background-image: url(./assets/logomao.png);
@@ -47,9 +48,17 @@
       margin-bottom:15px;
     }
 
-    a.insta{
+    /* 🔥 Container dos botões */
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    a.insta, a.pdf-btn {
       display:inline-block;
-      margin-top:10px;
       background:linear-gradient(90deg,#c84b4b,#b33);
       padding:10px 16px;
       border-radius:8px;
@@ -59,7 +68,8 @@
       box-shadow:var(--shadow);
       transition:transform 0.2s;
     }
-    a.insta:hover{
+
+    a.insta:hover, a.pdf-btn:hover {
       transform:scale(1.05);
     }
 
@@ -137,13 +147,26 @@
       header h1{font-size:22px}
       .section{padding:18px}
       body{background-size:400px auto;}
+      .button-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+      a.insta, a.pdf-btn {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>GREVE — Projeto de Extensão</h1>
-    <a class="insta" href="https://instagram.com/instagramdotrabalho" target="_blank">ACESSE O INSTAGRAM DO PROJETO</a>
+    
+    <!-- 🔥 Grupo de botões -->
+    <div class="button-group">
+      <a class="insta" href="https://instagram.com/instagramdotrabalho" target="_blank">ACESSE O INSTAGRAM DO PROJETO</a>
+      <a class="pdf-btn" href="./assets/informativo.pdf" target="_blank">INFORMATIVO (PDF)</a>
+    </div>
   </header>
 
   <main>
@@ -222,8 +245,3 @@
   </footer>
 </body>
 </html>
-
-
-div kdowododw kdwwjdd 
-
-jdwdwo
