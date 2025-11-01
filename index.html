@@ -117,6 +117,38 @@
       box-shadow:0 12px 18px rgba(0,0,0,0.6);
     }
 
+    /* 🔥 Seção dos folders */
+    .folders{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:20px;
+      margin-top:40px;
+      width:100%;
+    }
+
+    .folders img{
+      width:90%;
+      max-width:600px;
+      border-radius:15px;
+      box-shadow:0 0 15px rgba(0,0,0,0.4);
+      transition:transform 0.3s;
+    }
+
+    .folders img:hover{
+      transform:scale(1.02);
+    }
+
+    @media (min-width:700px){
+      .folders{
+        flex-direction:row;
+        justify-content:center;
+      }
+      .folders img{
+        width:45%;
+      }
+    }
+
     .section{
       background: rgba(255, 255, 255, 0.08);
       padding: 25px;
@@ -208,6 +240,12 @@
       Seu navegador não suporta vídeo.
     </video>
 
+    <!-- 🔥 Folders -->
+    <div class="folders">
+      <img src="assets/folder1.jpeg" alt="Folder 1">
+      <img src="assets/folder2.jpeg" alt="Folder 2">
+    </div>
+
     <!-- Seções -->
     <section class="section"> 
       <h2>Tema Atribuído</h2> 
@@ -225,7 +263,7 @@
 
     <section class="section">
       <h2>2 - Justificativa</h2>
-      <p>A escolha do tema “Direito do Trabalho e Novas Formas de Greve” é relevante por tratar de um direito fundamental assegurado pela Constituição Federal, especialmente pelo artigo 9º, que garante aos trabalhadores o direito de se organizar e de exercer a greve como instrumento legítimo de defesa de seus interesses econômicos, sociais e profissionais, em consonância com os princípios da dignidade da pessoa humana e da cidadania. A greve, historicamente, constitui um mecanismo de resistência e de conquista de direitos sociais e trabalhistas, sendo regulamentada ainda pela Lei nº 7.783/1989, que estabelece requisitos, como comunicação prévia, negociação coletiva e preservação de serviços essenciais, além de delimitar formas de atuação legítimas e ilegítimas. Diante das transformações no mundo do trabalho, novas modalidades de mobilização vêm surgindo, como boicotes digitais, paralisações estratégicas e greves de zelo, ampliando o alcance e a eficácia dessa luta, mas mantendo a necessidade de observância dos requisitos legais para assegurar a legalidade e legitimidade do movimento. Nesse contexto, a atividade proposta busca transformar o conhecimento teórico em prática extensionista, por meio da criação e distribuição de folders explicativos em empresas locais e da produção de conteúdo digital em plataformas como Instagram, esclarecendo dúvidas, aproximando o tema da realidade cotidiana e promovendo o diálogo entre trabalhadores, empresas e sociedade. Portanto, a proposta justifica-se pelo seu caráter educativo e social, ao difundir informações de forma acessível e atrativa, contribuindo para a formação cidadã, para o fortalecimento da participação democrática dos trabalhadores na defesa de seus direitos e para a valorização da regulamentação jurídica que protege o exercício legítimo da greve.</p>
+      <p>O tema “Direito do Trabalho e Novas Formas de Greve” é importante por tratar de um direito fundamental garantido pelo artigo 9º da Constituição Federal de 1988 e pela Lei nº 7.783/1989. Diante das mudanças no mundo do trabalho, surgem novas formas de mobilização, como boicotes digitais e greves de zelo. O projeto busca unir teoria e prática por meio de ações educativas, como folders, dinâmicas e conteúdo digital, promovendo informação, diálogo e conscientização sobre o exercício legítimo da greve.</p>
     </section>
 
     <section class="section">
